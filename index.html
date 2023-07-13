@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="rating-container">
+    <div class="rating-content">
+      <div class="icon-block">
+        <div class="circle"><img src="./assets/images/icon-star.svg" alt="star" class="star-icon"></div>
+      </div>
+      <h2 class="title">How did we do?</h2>
+      <p class="text">Please let us know how we did with your support request. All feedback is appreciated to help us
+        improve our offering!</p>
+      <section class="marks">
+        <div class="circle mark-item"><span>1</span></div>
+        <div class="circle mark-item"><span>2</span></div>
+        <div class="circle mark-item"><span>3</span></div>
+        <div class="circle mark-item"><span>4</span></div>
+        <div class="circle mark-item"><span>5</span></div>
+      </section>
+      <button class="submit-btn" onclick="submit()"><span class="btn-text">SUBMIT</span></button>
+    </div>
+    <div class="appreciated">
+      <div class="thank-you-img-block"><img src="./assets/images/illustration-thank-you.svg" alt="thank you"></div>
+      <div class="result-block circle">You selected
+        <span id="result-value">5</span>
+        out of 5
+      </div>
+      <h2 class="title">Thank you!</h2>
+      <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

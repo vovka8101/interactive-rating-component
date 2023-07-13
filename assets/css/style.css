@@ -1,0 +1,184 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+/* --------------- Rating content section --------------- */
+.rating-container {
+    max-width: 350px;
+    min-width: 250px;
+    margin: 154px 24px;
+    padding: 24px;
+    background-color: #202731;
+    border-radius: 15px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2e343d;
+}
+
+.star-icon {
+    width: 35%;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    letter-spacing: .04rem;
+    font-weight: 700;
+}
+
+.text {
+    line-height: 22px;
+    font-size: 0.93rem;
+    opacity: 0.4;
+}
+
+.marks {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mark-item span {
+    opacity: 0.4;
+    font-size: 0.93rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 8px;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 30px;
+}
+
+.btn-text {
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+
+
+/* --------------- Thank you section --------------- */
+.appreciated {
+    display: none;
+    text-align: center;
+}
+
+.appreciated .circle {
+    display: inline-block;
+    width: auto;
+    padding: 8px;
+    margin-bottom: 8px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.thank-you-img-block {
+    margin-top: 10px;
+}
+
+.thank-you-img-block img {
+    width: 52%;
+}
+
+.result-block {
+    margin-top: 18px;
+    color: hsl(25, 97%, 53%);
+    font-size: 0.93rem;
+}
+
+
+
+/* --------------- Interactive elements --------------- */
+.mark-item:hover {
+    background-color: hsl(217, 12%, 63%);
+    cursor: pointer;
+}
+
+.mark-item:hover span {
+    opacity: 1;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    cursor: none;
+}
+
+.active:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: default;
+}
+
+.active span {
+    opacity: 1;
+}
+
+
+/* --------------- Responsive design for desktop --------------- */
+@media (min-width: 400px) {
+    html {
+        font-size: 16px;
+    }
+    .rating-container {
+        border-radius: 30px;
+        padding: 32px;
+        max-width: 410px;
+        margin: 194px auto;
+    }
+
+    .title {
+        margin-top: 34px;
+        font-size: 1.65rem;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .marks {
+        justify-content: space-around;
+        margin-bottom: 35px;
+    }
+
+    .submit-btn {
+        margin-bottom: 0;
+    }
+
+    .btn-text {
+        font-size: 0.93rem;
+    }
+
+    .text {
+        line-height: 24px;
+        font-size: 0.95rem;
+        opacity: 0.5;
+    }
+
+    .thank-you-img-block img {
+        width: 48%;
+    }
+}
